@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using Src.Domain.Core.ManageUser.Entities;
+@model User
+<div class="text-center" style="background-color:antiquewhite; border-radius:6px; height:100vh;">
+    <h1 class="display-4">Welcome to the Online Store!!</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if (Model is not null)
+    {
+        <p class="display-3">Current Online User: @Model.Name</p>
+    }
+    @if (TempData["SuccessMessage"] is not null)
+    {
+        <div id="alertbox" class="alert alert-success" role="alert">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["ErrorMessage"] is not null)
+    {
+        <div id="alertbox" class="alert alert-success" role="alert">@TempData["ErrorMessage"]</div>
+    }
+    <script>
+        setTimeout(function () {
+            var alertbox = document.getElementById('alertbox');
+            if (alertbox) {
+                alertbox.style.transition = 'opacity 0.5s ease'
+                alertbox.style.opacity = '0';
+                setTimeout(function () { alertbox.remove(); }, 500);
+            }
+        }, 2000);
+    </script>
+</div>
+

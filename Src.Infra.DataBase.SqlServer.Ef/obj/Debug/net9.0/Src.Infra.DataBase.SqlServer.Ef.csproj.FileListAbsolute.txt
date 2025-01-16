@@ -1,0 +1,17 @@
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.deps.json
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.runtimeconfig.json
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.dll
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.pdb
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Domain.Core.dll
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\bin\Debug\net9.0\Src.Domain.Core.pdb
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.csproj.AssemblyReference.cache
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.AssemblyInfoInputs.cache
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.AssemblyInfo.cs
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.csproj.CoreCompileInputs.cache
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infr.081E94E1.Up2Date
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.dll
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\refint\Src.Infra.DataBase.SqlServer.Ef.dll
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.pdb
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.genruntimeconfig.cache
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\ref\Src.Infra.DataBase.SqlServer.Ef.dll
