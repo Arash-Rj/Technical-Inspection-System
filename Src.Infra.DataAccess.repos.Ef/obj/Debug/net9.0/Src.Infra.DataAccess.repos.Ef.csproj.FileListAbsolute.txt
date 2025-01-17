@@ -15,3 +15,4 @@ D:\programming\ApointmentSystem\Src.Infra.DataAccess.repos.Ef\obj\Debug\net9.0\S
 D:\programming\ApointmentSystem\Src.Infra.DataAccess.repos.Ef\obj\Debug\net9.0\refint\Src.Infra.DataAccess.repos.Ef.dll
 D:\programming\ApointmentSystem\Src.Infra.DataAccess.repos.Ef\obj\Debug\net9.0\Src.Infra.DataAccess.repos.Ef.pdb
 D:\programming\ApointmentSystem\Src.Infra.DataAccess.repos.Ef\obj\Debug\net9.0\ref\Src.Infra.DataAccess.repos.Ef.dll
+D:\programming\ApointmentSystem\Src.Infra.DataAccess.repos.Ef\obj\Debug\net9.0\Src.Infra.DataAccess.repos.Ef.sourcelink.json

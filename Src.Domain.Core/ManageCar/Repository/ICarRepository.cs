@@ -16,5 +16,6 @@ namespace Src.Domain.Core.ManageCar.Repository
         public Result Delete(Car car);
         public Result Update(Car car);
         public int GetCarId(string LicensePlate);
+        public Car GetCarById(int id);
     }
 }

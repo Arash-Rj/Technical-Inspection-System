@@ -1,0 +1,51 @@
+﻿@using Src.Domain.Core.ManageCar.Entities
+@using Src.Domain.Core.ManageCar.Enums
+@model List<Car>
+<div class="table-responsive">
+    <form asp-action="Index" >
+        <div class="input-group mb-3">
+            <button class="btn btn-info" value="0" name="value" type="submit">
+                Newest
+            </button>
+            <button class="btn btn-info" value="1" name="value" type="submit">
+                Oldest
+            </button>
+        </div>
+    </form>
+    <table class="table table-striped table-hover table-bordered table-sm ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Owner Id</th>
+                <th>Owner name</th>
+                <th>Owner National Code</th>
+                <th>Owner phone Number</th>
+                <th>Car Model</th>
+                <th>Company</th>
+                <th>License Plate</th>
+                <th>Car Manufacture Date </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in @Model)
+            {
+                <tr>
+                    <th scope="row">@car.Id</th>
+                    <td>@car.UserId</td>
+                    <td>@car.User.Name</td>
+                    <td>@car.User.NationalCode</td>
+                    <td>@car.User.PhoneNumber</td>
+                    <td>@car.Model</td>
+                    <td>@car.Company</td>
+                    <td>@car.LicensePlate</td>
+                    <td>@car.ManufactureDate</td>
+                    <td>
+                        <a class="btn btn-danger" asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id">Delete</a>
+                        <a class="btn btn-outline-info" asp-controller="Car" asp-action="Edit" asp-route-id="@car.Id">Update</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-info" asp-controller="Car" asp-action="Create">Add New Car</a>
+</div>

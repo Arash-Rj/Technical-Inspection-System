@@ -15,3 +15,4 @@ D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0
 D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.pdb
 D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.genruntimeconfig.cache
 D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\ref\Src.Infra.DataBase.SqlServer.Ef.dll
+D:\programming\ApointmentSystem\Src.Infra.DataBase.SqlServer.Ef\obj\Debug\net9.0\Src.Infra.DataBase.SqlServer.Ef.sourcelink.json

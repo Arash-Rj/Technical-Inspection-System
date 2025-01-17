@@ -73,5 +73,10 @@ namespace Src.Domain.AppService.ManageUser
                 }
             }
         }
+
+        public List<User> GetAllUsers()
+        {
+            return _userService.GetAllUsers();
+        }
     }
 }

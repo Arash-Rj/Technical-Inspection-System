@@ -35,12 +35,19 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageCar
 
         public Result Delete(Car car)
         {
-            throw new NotImplementedException();
+             _appointmentDbContext.Cars.Remove(car);
+            _appointmentDbContext.SaveChanges();
+            return new Result(true);
         }
 
         public List<Car> GetAllCars()
         {
-            return _appointmentDbContext.Cars.ToList();
+            return _appointmentDbContext.Cars.Include(c => c.User).ToList();
+        }
+
+        public Car GetCarById(int id)
+        {
+            return _appointmentDbContext.Cars.First(c => c.Id.Equals(id));
         }
 
         public Car? GetCarByLicense(string carlicense)
@@ -55,7 +62,9 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageCar
 
         public Result Update(Car car)
         {
-            throw new NotImplementedException();
+            _appointmentDbContext.Update(car);
+            _appointmentDbContext.SaveChanges();
+            return new Result(true);
         }
     }
 }

@@ -13,5 +13,10 @@ namespace Src.Domain.Core.ManageCar.AppService
     {
         public List<ModelEnum> GetCarModels();
         public Result CanRequest(Car car);
+        public List<Car> GetAllCars();
+        public Cardto GetCarDtoById(int id);
+        public Result EditCar(Cardto cardto);
+        public Result DeleteCar(int id);
+        public Result CreateCar(int userid,string license,ModelEnum model, DateOnly manufacturedate, CompanyEnum company);
     }
 }

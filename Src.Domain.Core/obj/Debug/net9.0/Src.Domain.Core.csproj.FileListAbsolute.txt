@@ -9,3 +9,4 @@ D:\programming\ApointmentSystem\Src.Domain.Core\obj\Debug\net9.0\Src.Domain.Core
 D:\programming\ApointmentSystem\Src.Domain.Core\obj\Debug\net9.0\refint\Src.Domain.Core.dll
 D:\programming\ApointmentSystem\Src.Domain.Core\obj\Debug\net9.0\Src.Domain.Core.pdb
 D:\programming\ApointmentSystem\Src.Domain.Core\obj\Debug\net9.0\ref\Src.Domain.Core.dll
+D:\programming\ApointmentSystem\Src.Domain.Core\obj\Debug\net9.0\Src.Domain.Core.sourcelink.json

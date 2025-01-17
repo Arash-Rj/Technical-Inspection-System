@@ -1,6 +1,7 @@
 ﻿@{
     Layout = null;
 }
+@using Src.Domain.Core.ManageCar.Enums
 @using Src.Domain.Core.ManageRequest.Entities
 @model Request
 <!DOCTYPE html>
@@ -53,9 +54,13 @@
                     }
                 </select>
             </div>
-            <div class="mb-3">
-                <label for="Company" class="form-label">Company</label>
-                <input type="tel" class="form-control" asp-for=@Model.Car.Company id="Company" placeholder="Enter your Company">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Company</label>
+                <select class="form-select" id="inputGroupSelect01" asp-for="@Model.Car.Company">
+                    <option selected>Choose Company...</option>
+                    <option value="0" required>@CompanyEnum.saipa</option>
+                    <option value="1" required>@CompanyEnum.IranKhodro</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="LicensePlate" class="form-label">LicensePlate</label>

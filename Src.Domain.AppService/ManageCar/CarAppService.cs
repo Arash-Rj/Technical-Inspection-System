@@ -62,6 +62,47 @@ namespace Src.Domain.AppService.ManageCar
             }
         }
 
+        public Result CreateCar(int userid, string license, ModelEnum model, DateOnly manufacturedate, CompanyEnum company)
+        {
+            Car car = new Car()
+            {
+                UserId = userid,
+                LicensePlate = license,
+                Model = model,
+                Company = company,
+                ManufactureDate = manufacturedate
+            };
+           return _carService.AddCar(car);
+        }
+
+        public Result DeleteCar(int id)
+        {
+            return _carService.DeleteCar(id);
+        }
+
+        public Result EditCar(Cardto cardto)
+        {
+            return _carService.UpdateCar(cardto);
+        }
+
+        public List<Car> GetAllCars()
+        {
+            return _carService.GetAllCars();
+        }
+
+        public Cardto GetCarDtoById(int id)
+        {
+            var car = _carService.GetCarById(id);
+            Cardto cardto = new Cardto()
+            {
+                Id = id,
+                LicensePlate = car.LicensePlate,
+                Company = car.Company,
+                Model = car.Model,
+            };
+            return cardto;
+        }
+
         public List<ModelEnum> GetCarModels()
         {
             return _carService.GetCarModels();

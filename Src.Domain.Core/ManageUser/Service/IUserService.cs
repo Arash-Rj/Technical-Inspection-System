@@ -14,5 +14,6 @@ namespace Src.Domain.Core.ManageUser.Service
         public int GetUserId(string nationalcode);
         public Result DoesUserExists(string name,string nationalcode);
         public Result IsUserAdmin(RoleEnum? role);
+        public List<User> GetAllUsers();
     }
 }

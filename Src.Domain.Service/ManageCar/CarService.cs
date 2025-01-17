@@ -19,6 +19,18 @@ namespace Src.Domain.Service.ManageCar
             this.carRepository = carRepository;
         }
 
+        public Result AddCar(Car car)
+        {
+            carRepository.Add(car);
+            return new Result(true,"Car Is Successfully Added.");
+        }
+
+        public Result DeleteCar(int id)
+        {
+            var car = carRepository.GetCarById(id);
+            return carRepository.Delete(car);
+        }
+
         public Result EvenOrOdd(CompanyEnum company)
         {
             if(DateTime.Now.DayOfYear % 2  == 0)
@@ -43,6 +55,16 @@ namespace Src.Domain.Service.ManageCar
                     return new Result(false, $"Only {CompanyEnum.saipa} cars can Submit request on odd days.");
                 }
             }
+        }
+
+        public List<Car> GetAllCars()
+        {
+            return carRepository.GetAllCars();
+        }
+
+        public Car GetCarById(int id)
+        {
+            return carRepository.GetCarById(id);
         }
 
         public Car? GetCarByLicense(string carlicense)
@@ -73,6 +95,15 @@ namespace Src.Domain.Service.ManageCar
             {
                 return new Result(false);
             }
+        }
+
+        public Result UpdateCar(Cardto cardto)
+        {
+            var car = carRepository.GetCarById(cardto.Id);
+            car.LicensePlate = cardto.LicensePlate;
+            car.Model = cardto.Model;
+            car.Company = cardto.Company;
+            return carRepository.Update(car);
         }
     }
 }

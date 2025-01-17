@@ -1,0 +1,137 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+@using Src.Domain.Core.ManageCar.Enums
+@using Src.Domain.Core.ManageCar.Entities
+@model Cardto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/App.Endpoints.MVC.Bank.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'harmattan', sans-serif;
+            background-image: linear-gradient(135deg,rgb(70, 133, 205),rgb(255, 0, 238));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+            .container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+                .form-group input:focus {
+                    outline: none;
+                    border-color: #4a90e2;
+                    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+                }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #357ab7;
+            }
+
+        .note {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form asp-action="Edit" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" asp-for="@Model.LicensePlate" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="Model" class="form-label">Model</label>
+                <select class="form-select" id="Model" asp-for="@Model.Model">
+                    <option selected>Choose Model...</option>
+                    @{
+                        int i = 0;
+                    }
+                    @foreach (var models in CarModels.Models)
+                    {
+                        int number = (int)models;
+                        <option value="@number" required>@models</option>
+                        i = i + 1;
+                    }
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Company</label>
+                <select class="form-select" id="inputGroupSelect01" asp-for="@Model.Company">
+                    <option selected>Choose Company...</option>
+                    <option value="0" required>@CompanyEnum.saipa</option>
+                    <option value="1" required>@CompanyEnum.IranKhodro</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Update</button>
+        </form>
+        @if (ViewBag.ErrorMessage is not null)
+        {
+            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+    </div>
+</body>
+</html>

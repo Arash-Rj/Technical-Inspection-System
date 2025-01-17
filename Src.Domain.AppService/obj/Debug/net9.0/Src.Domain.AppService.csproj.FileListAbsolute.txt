@@ -19,3 +19,4 @@ D:\programming\ApointmentSystem\Src.Domain.AppService\obj\Debug\net9.0\Src.Domai
 D:\programming\ApointmentSystem\Src.Domain.AppService\obj\Debug\net9.0\refint\Src.Domain.AppService.dll
 D:\programming\ApointmentSystem\Src.Domain.AppService\obj\Debug\net9.0\Src.Domain.AppService.pdb
 D:\programming\ApointmentSystem\Src.Domain.AppService\obj\Debug\net9.0\ref\Src.Domain.AppService.dll
+D:\programming\ApointmentSystem\Src.Domain.AppService\obj\Debug\net9.0\Src.Domain.AppService.sourcelink.json

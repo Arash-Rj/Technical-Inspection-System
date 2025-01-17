@@ -22,7 +22,7 @@ namespace Src.EndPoint.MVC.AppointmentSystem.Controllers
         {
             Src.Domain.Core.ManageRequest.Entities.Request request = new Domain.Core.ManageRequest.Entities.Request();
             var models = carAppService.GetCarModels();
-            CarModels.Models = models;
+            CarModels.Models = models.Distinct().ToList(); ;
             return View(request);
         }
         [HttpPost]

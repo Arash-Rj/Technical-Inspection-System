@@ -1,0 +1,151 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+@using Src.Domain.Core.ManageCar.Enums
+@using Src.Domain.Core.ManageUser.Entities
+@model List<User>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/App.Endpoints.MVC.Bank.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'harmattan', sans-serif;
+            background-image: linear-gradient(135deg,rgb(70, 133, 205),rgb(255, 0, 238));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+            .container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+                .form-group input:focus {
+                    outline: none;
+                    border-color: #4a90e2;
+                    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+                }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #357ab7;
+            }
+
+        .note {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label for="name">License Plate</label>
+                <input type="text" id="name" name="licenseplate" placeholder="Enter the License Plate" required>
+            </div>
+            <div class="mb-3">
+                <label for="Model" class="form-label">Model</label>
+                <select class="form-select" id="Model" name="model">
+                    <option selected>Choose Model...</option>
+                    <option value="0" required>@ModelEnum.Tiba2</option>
+                    <option value="1" required>@ModelEnum.Saina</option>
+                    <option value="2" required>@ModelEnum.Queek</option>
+                    <option value="3" required>@ModelEnum.Atlas</option>
+                    <option value="4" required>@ModelEnum.Tondarplus</option>
+                    <option value="5" required>@ModelEnum.Runna</option>
+                    <option value="6" required>@ModelEnum.Parslx</option>
+                    <option value="7" required>@ModelEnum.Peugeot207</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Company</label>
+                <select class="form-select" id="inputGroupSelect01" name="company">
+                    <option selected>Choose Company...</option>
+                    <option value="0" required>@CompanyEnum.saipa</option>
+                    <option value="1" required>@CompanyEnum.IranKhodro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="manufacturedate">Manufacture Date</label>
+                <input type="date" id="birthdate" name="manufacturedate" placeholder="Car manufacture date" required>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Users</label>
+                <select class="form-select" id="inputGroupSelect01" name="userid">
+                    <option selected>Choose a user...</option>
+                    @foreach (var u in Model)
+                    {
+                        <option value="@u.Id" required>@u.Name</option>
+                    }
+                </select>
+            </div>
+            <br />
+            <button type="submit" class="btn">Create</button>
+        </form>
+        @if (ViewBag.ErrorMessage is not null)
+        {
+            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+    </div>
+</body>
+</html>

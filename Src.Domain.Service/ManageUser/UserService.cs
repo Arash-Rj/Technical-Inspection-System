@@ -31,6 +31,11 @@ namespace Src.Domain.Service.ManageUser
             }
         }
 
+        public List<User> GetAllUsers()
+        {
+            return _userRepository.GetAll();
+        }
+
         public User? GetUser(string naitonalcode)
         {
             return _userRepository.Get(naitonalcode);

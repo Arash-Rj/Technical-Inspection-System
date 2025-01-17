@@ -11,5 +11,6 @@ namespace Src.Domain.Core.ManageUser.AppService
     {
         public Result CanRequest(User user);
         public Result AdminLogin(string name, string natnionalcode);
+        public List<User> GetAllUsers();
     }
 }
