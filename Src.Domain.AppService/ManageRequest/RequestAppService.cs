@@ -32,7 +32,7 @@ namespace Src.Domain.AppService.ManageRequest
             return _requestService.AddLogRequest(carid);
         }
 
-        public Result AddRequest(string nationalcode, string licenseplate)
+        public Result AddRequest(string nationalcode, string licenseplate, DateTime requestdate)
         {
             var hasrequestinyear = _requestService.AnyRequestInYear(licenseplate);
             if (hasrequestinyear)
@@ -40,8 +40,8 @@ namespace Src.Domain.AppService.ManageRequest
                 return new Result(false, "You have already submitted in this year once.");
             }
             else
-            {
-                var hasreachedlimit = _requestService.ReachedDailyLimit();
+            { 
+                var hasreachedlimit = _requestService.ReachedDailyLimit(requestdate);
                 if(hasreachedlimit.IsDone)
                 {
                     return new Result(false, hasreachedlimit.Message);

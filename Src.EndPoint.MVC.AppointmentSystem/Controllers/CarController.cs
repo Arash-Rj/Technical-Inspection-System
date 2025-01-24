@@ -75,7 +75,8 @@ namespace Src.EndPoint.MVC.AppointmentSystem.Controllers
             if (!res.IsDone)
             {
                 ViewBag.ErrorMessage = res.Message;
-                return View();
+                var users = _userAppService.GetAllUsers();
+                return View(users);
             }
             TempData["SuccessMessage"] = res.Message;
             return RedirectToAction("Index", "Home");

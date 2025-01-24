@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Src.Domain.AppService.ManageCar;
 using Src.Domain.AppService.ManageRequest;
 using Src.Domain.AppService.ManageUser;
+using Src.Domain.Core.Configs;
 using Src.Domain.Core.ManageCar.AppService;
 using Src.Domain.Core.ManageCar.Repository;
 using Src.Domain.Core.ManageCar.Service;
@@ -14,6 +15,7 @@ using Src.Domain.Core.ManageUser.Service;
 using Src.Domain.Service.ManageCar;
 using Src.Domain.Service.ManageRequest;
 using Src.Domain.Service.ManageUser;
+using Src.EndPoint.MVC.AppointmentSystem.Models;
 using Src.Infra.DataAccess.repos.Ef.ManageCar;
 using Src.Infra.DataAccess.repos.Ef.ManageRequest;
 using Src.Infra.DataAccess.repos.Ef.ManageUser;
@@ -24,6 +26,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var dayLimitaions = builder.Configuration.GetSection("DayLimitaions").Get<DayLimitaions>();
+builder.Services.AddSingleton(dayLimitaions);
 string? connectionstring = builder.Configuration.GetConnectionString("DefultConnection");
 builder.Services.AddDbContext<AppointmentDbContext>(options => options.UseSqlServer(connectionstring));
 builder.Services.AddScoped<IUserRepository, UserRepository>();

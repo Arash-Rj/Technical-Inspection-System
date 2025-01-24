@@ -100,22 +100,21 @@
         <h2>Register</h2>
         <form asp-action="Edit" method="post">
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" asp-for="@Model.LicensePlate" placeholder="Enter your name" required>
+                <label for="name">License Plate</label>
+                <input type="text" id="name" asp-for="@Model.LicensePlate" placeholder="Enter your License Plate" required>
             </div>
             <div class="mb-3">
                 <label for="Model" class="form-label">Model</label>
                 <select class="form-select" id="Model" asp-for="@Model.Model">
                     <option selected>Choose Model...</option>
-                    @{
-                        int i = 0;
-                    }
-                    @foreach (var models in CarModels.Models)
-                    {
-                        int number = (int)models;
-                        <option value="@number" required>@models</option>
-                        i = i + 1;
-                    }
+                    <option value="0" required>@ModelEnum.Tiba2</option>
+                    <option value="1" required>@ModelEnum.Saina</option>
+                    <option value="2" required>@ModelEnum.Queek</option>
+                    <option value="3" required>@ModelEnum.Atlas</option>
+                    <option value="4" required>@ModelEnum.Tondarplus</option>
+                    <option value="5" required>@ModelEnum.Runna</option>
+                    <option value="6" required>@ModelEnum.Parslx</option>
+                    <option value="7" required>@ModelEnum.Peugeot207</option>
                 </select>
             </div>
             <div class="input-group mb-3">

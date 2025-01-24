@@ -21,6 +21,12 @@ namespace Src.Domain.Service.ManageCar
 
         public Result AddCar(Car car)
         {
+            var cars = carRepository.GetAllCars();
+            bool isrepetitive = cars.Any(c => c.LicensePlate.Equals(car.LicensePlate));
+            if (isrepetitive )
+            {
+                return new Result(false, "License plate already exists.");
+            }
             carRepository.Add(car);
             return new Result(true,"Car Is Successfully Added.");
         }

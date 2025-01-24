@@ -3,7 +3,7 @@
 }
 @using Src.Domain.Core.ManageCar.Enums
 @using Src.Domain.Core.ManageRequest.Entities
-@model Request
+@model RequestModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,51 +20,63 @@
             <!-- User Field -->
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" asp-for=@Model.User.Name placeholder="Enter your name" required>
+                <input type="text" class="form-control mb-3" id="name" asp-for=@Model.UserName placeholder="Enter your name" >
+                <span class="text-bg-danger m-3" asp-validation-for="UserName"></span>
             </div>
 
             <div class="mb-3">
                 <label for="NationalCode" class="form-label">NationalCode</label>
-                <input type="text" class="form-control" asp-for=@Model.User.NationalCode id="NationalCode" placeholder="Enter your NationalCode" required>
+                <input type="text" class="form-control mb-3" asp-for=@Model.NationalCode id="NationalCode" placeholder="Enter your NationalCode" >
+                <span class="text-bg-danger m-3" asp-validation-for="NationalCode"></span>
             </div>
 
             <div class="mb-3">
                 <label for="PhoneNumber" class="form-label">PhoneNumber</label>
-                <input type="text" class="form-control" asp-for=@Model.User.PhoneNumber id="PhoneNumber" placeholder="Enter your PhoneNumber" required>
+                <input type="text" class="form-control mb-3" asp-for=@Model.PhoneNumber id="PhoneNumber" placeholder="Enter your PhoneNumber" >
+                <span class="text-bg-danger m-3" asp-validation-for="PhoneNumber"></span>
             </div>
 
             <div class="mb-3">
                 <label for="Address" class="form-label">Address</label>
-                <textarea class="form-control" id="Address" asp-for="@Model.User.Address" rows="4" placeholder="Enter your Address"></textarea>
+                <textarea class="form-control mb-3" id="Address" asp-for="@Model.Address" rows="4" placeholder="Enter your Address"></textarea>
+                <span class="text-bg-danger m-3" asp-validation-for="Address"></span>
             </div>
-
+            <div class="mb-3">
+                <label for="birthdate">Request Date</label>
+                <input class="form-control mb-3" type="date" asp-for="@Model.RequestDate" placeholder="Birth date" >
+                <span class="text-bg-danger m-3" asp-validation-for="RequestDate"></span>
+            </div>
             <!-- Car Field -->
             <div class="mb-3">
                 <label for="Model" class="form-label">Model</label>
-                <select class="form-select" id="Model" asp-for="@Model.Car.Model">
-                    <option selected>Choose Model...</option>
+                <select class="form-select mb-3" id="Model" asp-for="@Model.CarModel">
                     @{
                         int i = 0;
                     }
                     @foreach(var models in CarModels.Models)
                     {
                         int number =(int)models;
-                        <option value="@number" required>@models</option>
+                        <option value="@number">@models</option>
                         i = i + 1;
                     }
+                    <option value="" selected>Choose Model...</option>
                 </select>
+                <span class="text-bg-danger m-3" asp-validation-for="CarModel"></span>
             </div>
-            <div class="input-group mb-3">
+            <div class="mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Company</label>
-                <select class="form-select" id="inputGroupSelect01" asp-for="@Model.Car.Company">
-                    <option selected>Choose Company...</option>
-                    <option value="0" required>@CompanyEnum.saipa</option>
-                    <option value="1" required>@CompanyEnum.IranKhodro</option>
-                </select>
+                <select class="form-select mb-3" id="inputGroupSelect01" asp-for="@Model.CarCompany">
+                    <option value="0" >@CompanyEnum.saipa</option>
+                    <option value="1" >@CompanyEnum.IranKhodro</option>
+                    <option value="" selected>Choose Company...</option>
+                </select>           
+                <br />
+                <span class="text-bg-danger m-3" asp-validation-for="CarCompany"></span>
             </div>
             <div class="mb-3">
                 <label for="LicensePlate" class="form-label">LicensePlate</label>
-                <input type="text" class="form-control" asp-for=@Model.Car.LicensePlate id="LicensePlate" placeholder="Enter your LicensePlate">
+                <input type="text" class="form-control mb-3" asp-for=@Model.LicensePlate id="LicensePlate" placeholder="Enter your LicensePlate">
+                <span class="text-bg-danger m-3" asp-validation-for="LicensePlate"></span>
             </div>
 
             @if (ViewBag.ErrorMessage is not null)
@@ -80,7 +92,7 @@
             </div> *@
 
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <button type="submit" class="btn btn-primary w-100 mb-5" >Submit</button>
         </form>
     </div>
 

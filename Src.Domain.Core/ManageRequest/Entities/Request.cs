@@ -19,14 +19,7 @@ namespace Src.Domain.Core.ManageRequest.Entities
         public DateTime RequestDate { get; set; }
         public StatusEnum Status { get; set; }
 
-        public Request()
-        {
+   
 
-        }
-        public Request(string m =null)
-        {
-            RequestDate = DateTime.Now;
-            Status = StatusEnum.Pending;
-        }
     }
 }

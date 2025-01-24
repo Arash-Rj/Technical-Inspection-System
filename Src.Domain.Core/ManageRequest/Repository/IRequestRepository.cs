@@ -12,7 +12,7 @@ namespace Src.Domain.Core.ManageRequest.Repository
     {
         public Result Add(Request request);
         public bool AnyRequestInYear(string licenseplate);
-        public int TodayRequestNo();
+        public int TodayRequestNo(DateTime requestdate);
         public List<Request> GetAll();
         public bool Update(Request request);    
         public Request GetById(int id);

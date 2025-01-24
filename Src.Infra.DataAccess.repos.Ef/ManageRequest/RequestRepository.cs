@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Src.Domain.Core.ManageRequest.Entities;
+using Src.Domain.Core.ManageRequest.Enums;
 using Src.Domain.Core.ManageRequest.Repository;
 using Src.Domain.Core.ManageUser.Entities;
 using Src.Infra.DataBase.SqlServer.Ef.DbContexs;
@@ -53,7 +54,7 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageRequest
 
         public List<Request> GetAll()
         {
-            return _appointmentDbContext.Requests.Include(r => r.User).Include(r => r.Car).ToList();
+            return _appointmentDbContext.Requests.Where(r => r.Status.Equals(StatusEnum.Pending)).Include(r => r.User).Include(r => r.Car).ToList();
         }
 
         public Request GetById(int id)
@@ -61,9 +62,9 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageRequest
             return _appointmentDbContext.Requests.Include(r => r.User).Include(r => r.Car).First(r => r.Id == id);   
         }
 
-        public int TodayRequestNo()
+        public int TodayRequestNo(DateTime requestdate)
         {
-            return _appointmentDbContext.Requests.Where(r => r.RequestDate.DayOfYear == DateTime.Now.DayOfYear).Count();
+            return _appointmentDbContext.Requests.Where(r => r.RequestDate.DayOfYear == requestdate.DayOfYear && r.Status == StatusEnum.Pending).Count();
         }
 
         public bool Update(Request request)
