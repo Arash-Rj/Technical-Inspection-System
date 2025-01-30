@@ -19,9 +19,9 @@ namespace Src.Domain.AppService.ManageCar
             _carService = carService;
         }
 
-        public Result CanRequest(Car car)
+        public async Task<Result> CanRequest(Car car)
         {
-            var Car = _carService.GetCarByLicense(car.LicensePlate);
+            var Car = await _carService.GetCarByLicense(car.LicensePlate);
             if (Car == null)
             {
                 return new Result(false,"No Car was found with the given Specifications!!!");
@@ -32,10 +32,10 @@ namespace Src.Domain.AppService.ManageCar
                 {
                     if(Car.Company == Car.Company && car.Model == Car.Model)
                     {
-                        var isdone = _carService.EvenOrOdd(car.Company);
+                        var isdone =  _carService.EvenOrOdd(car.Company);
                         if(isdone.IsDone)
                         {
-                           var isold =  _carService.IsOld(Car.ManufactureDate);
+                           var isold =   _carService.IsOld(Car.ManufactureDate);
                             if (isold.IsDone)
                             {
                                 return new Result(false,isold.Message);
@@ -62,7 +62,7 @@ namespace Src.Domain.AppService.ManageCar
             }
         }
 
-        public Result CreateCar(int userid, string license, ModelEnum model, DateOnly manufacturedate, CompanyEnum company)
+        public async Task<Result> CreateCar(int userid, string license, ModelEnum model, DateOnly manufacturedate, CompanyEnum company)
         {
             Car car = new Car()
             {
@@ -72,30 +72,30 @@ namespace Src.Domain.AppService.ManageCar
                 Company = company,
                 ManufactureDate = manufacturedate
             };
-           return _carService.AddCar(car);
+           return await _carService.AddCar(car);
         }
 
-        public Result DeleteCar(int id)
+        public async Task<Result> DeleteCar(int id)
         {
-            return _carService.DeleteCar(id);
+            return await _carService.DeleteCar(id);
         }
 
-        public Result EditCar(Cardto cardto)
+        public async Task<Result> EditCar(Cardto cardto)
         {
-            return _carService.UpdateCar(cardto);
+            return await _carService.UpdateCar(cardto);
         }
 
-        public List<Car> GetAllCars()
+        public async Task<List<Car>> GetAllCars()
         {
 
-            var cars = _carService.GetAllCars();
+            var cars = await _carService.GetAllCars();
             cars.ForEach(car => car.User = null);
             return cars;
         }
 
-        public Cardto GetCarDtoById(int id)
+        public async Task<Cardto> GetCarDtoById(int id)
         {
-            var car = _carService.GetCarById(id);
+            var car = await _carService.GetCarById(id);
             Cardto cardto = new Cardto()
             {
                 Id = id,
@@ -106,9 +106,9 @@ namespace Src.Domain.AppService.ManageCar
             return cardto;
         }
 
-        public List<ModelEnum> GetCarModels()
+        public async Task<List<ModelEnum>> GetCarModels()
         {
-            return _carService.GetCarModels();
+            return await _carService.GetCarModels();
         }
     }
 }

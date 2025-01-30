@@ -10,10 +10,10 @@ namespace Src.Domain.Core.ManageUser.Service
 {
     public interface IUserService
     {
-        public User? GetUser(string naitonalcode);
-        public int GetUserId(string nationalcode);
-        public Result DoesUserExists(string name,string nationalcode);
+        public Task<User?> GetUser(string naitonalcode);
+        public Task<int> GetUserId(string nationalcode);
+        public Task<Result> DoesUserExists(string name,string nationalcode);
         public Result IsUserAdmin(RoleEnum? role);
-        public List<User> GetAllUsers();
+        public Task<List<User>> GetAllUsers();
     }
 }

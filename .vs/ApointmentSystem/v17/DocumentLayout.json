@@ -1,7 +1,80 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\programming\\ApointmentSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|d:\\programming\\apointmentsystem\\src.infra.dataaccess.repos.ef\\manageuser\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|solutionrelative:src.infra.dataaccess.repos.ef\\manageuser\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|d:\\programming\\apointmentsystem\\src.infra.dataaccess.repos.ef\\managerequest\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|solutionrelative:src.infra.dataaccess.repos.ef\\managerequest\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|d:\\programming\\apointmentsystem\\src.infra.dataaccess.repos.ef\\managecar\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E969A553-D0C2-4047-A3ED-0D0AAF263357}|Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj|solutionrelative:src.infra.dataaccess.repos.ef\\managecar\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|d:\\programming\\apointmentsystem\\src.domain.service\\manageuser\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|solutionrelative:src.domain.service\\manageuser\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|d:\\programming\\apointmentsystem\\src.domain.appservice\\manageuser\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|solutionrelative:src.domain.appservice\\manageuser\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|d:\\programming\\apointmentsystem\\src.domain.service\\managerequest\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|solutionrelative:src.domain.service\\managerequest\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|d:\\programming\\apointmentsystem\\src.domain.service\\managecar\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56523F3-7BA0-4CB9-8DEC-10F6324C9D3E}|Src.Domain.Service\\Src.Domain.Service.csproj|solutionrelative:src.domain.service\\managecar\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|d:\\programming\\apointmentsystem\\src.domain.appservice\\managecar\\carappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|solutionrelative:src.domain.appservice\\managecar\\carappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managecar\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managecar\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|d:\\programming\\apointmentsystem\\src.domain.appservice\\managerequest\\requestappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|solutionrelative:src.domain.appservice\\managerequest\\requestappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\appservice\\iuserappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\appservice\\iuserappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managerequest\\appservice\\irequestappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managerequest\\appservice\\irequestappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managerequest\\service\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managerequest\\service\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managerequest\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managerequest\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managecar\\appservice\\icarappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managecar\\appservice\\icarappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\managecar\\repository\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\managecar\\repository\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +82,242 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageUser\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Src.Infra.DataAccess.repos.Ef\\ManageUser\\UserRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageUser\\UserRepository.cs",
+              "RelativeToolTip": "Src.Infra.DataAccess.repos.Ef\\ManageUser\\UserRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:52:51.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageRequest\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "Src.Infra.DataAccess.repos.Ef\\ManageRequest\\RequestRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageRequest\\RequestRepository.cs",
+              "RelativeToolTip": "Src.Infra.DataAccess.repos.Ef\\ManageRequest\\RequestRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwEUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:50:06.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageCar\\CarRepository.cs",
+              "RelativeDocumentMoniker": "Src.Infra.DataAccess.repos.Ef\\ManageCar\\CarRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\ManageCar\\CarRepository.cs",
+              "RelativeToolTip": "Src.Infra.DataAccess.repos.Ef\\ManageCar\\CarRepository.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwD8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:43:14.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageUser\\UserService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Service\\ManageUser\\UserService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageUser\\UserService.cs",
+              "RelativeToolTip": "Src.Domain.Service\\ManageUser\\UserService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwCsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:40:03.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageRequest\\RequestService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Service\\ManageRequest\\RequestService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageRequest\\RequestService.cs",
+              "RelativeToolTip": "Src.Domain.Service\\ManageRequest\\RequestService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwFcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:37:17.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageCar\\CarService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Service\\ManageCar\\CarService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\ManageCar\\CarService.cs",
+              "RelativeToolTip": "Src.Domain.Service\\ManageCar\\CarService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAUwG0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:27:12.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "RelativeToolTip": "Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA2wBsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:25:57.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RequestAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageRequest\\RequestAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.AppService\\ManageRequest\\RequestAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageRequest\\RequestAppService.cs",
+              "RelativeToolTip": "Src.Domain.AppService\\ManageRequest\\RequestAppService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:23:17.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageCar\\CarAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.AppService\\ManageCar\\CarAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageCar\\CarAppService.cs",
+              "RelativeToolTip": "Src.Domain.AppService\\ManageCar\\CarAppService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwCUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:19:44.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUserAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:19:04.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Service\\IUserService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\Service\\IUserService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Service\\IUserService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\Service\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:18:21.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\Repository\\IUserRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:17:40.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRequestAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\AppService\\IRequestAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageRequest\\AppService\\IRequestAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\AppService\\IRequestAppService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageRequest\\AppService\\IRequestAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:16:54.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRequestService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\Service\\IRequestService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageRequest\\Service\\IRequestService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\Service\\IRequestService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageRequest\\Service\\IRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:15:55.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\Repository\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageRequest\\Repository\\IRequestRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageRequest\\Repository\\IRequestRepository.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageRequest\\Repository\\IRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:14:54.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICarAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\AppService\\ICarAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageCar\\AppService\\ICarAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\AppService\\ICarAppService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageCar\\AppService\\ICarAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:14:01.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\Service\\ICarService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageCar\\Service\\ICarService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\Service\\ICarService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageCar\\Service\\ICarService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:12:11.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICarRepository.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\Repository\\ICarRepository.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageCar\\Repository\\ICarRepository.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageCar\\Repository\\ICarRepository.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageCar\\Repository\\ICarRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:09:43.338Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"

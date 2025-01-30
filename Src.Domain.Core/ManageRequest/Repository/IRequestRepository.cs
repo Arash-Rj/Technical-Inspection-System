@@ -10,12 +10,12 @@ namespace Src.Domain.Core.ManageRequest.Repository
 {
     public interface IRequestRepository
     {
-        public Result Add(Request request);
-        public bool AnyRequestInYear(string licenseplate);
-        public int TodayRequestNo(DateTime requestdate);
-        public List<Request> GetAll();
-        public bool Update(Request request);    
-        public Request GetById(int id);
-        public Result AddLog(OldCarRequest request);
+        public Task<Result> Add(Request request);
+        public Task<bool> AnyRequestInYear(string licenseplate);
+        public Task<int> TodayRequestNo(DateTime requestdate);
+        public Task<List<Request>> GetAll();
+        public Task<bool> Update(Request request);    
+        public Task<Request> GetById(int id);
+        public Task<Result> AddLog(OldCarRequest request);
     }
 }

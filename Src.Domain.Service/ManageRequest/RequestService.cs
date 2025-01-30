@@ -24,16 +24,16 @@ namespace Src.Domain.Service.ManageRequest
             _dayLimitaions = dayLimitaions;
         }
 
-        public Result AddLogRequest(int carid)
+        public async Task<Result> AddLogRequest(int carid)
         {
             var requestlog = new OldCarRequest()
             {
                CarId = carid,
             };
-            return _requestRepository.AddLog(requestlog);
+            return await _requestRepository.AddLog(requestlog);
         }
 
-        public Result AddRequest(int userid , int carid)
+        public async Task<Result> AddRequest(int userid , int carid)
         {
             var request = new Request()
             {
@@ -43,27 +43,27 @@ namespace Src.Domain.Service.ManageRequest
                 Status = StatusEnum.Pending
 
             };
-           return _requestRepository.Add(request);
+           return await _requestRepository.Add(request);
         }
 
-        public bool AnyRequestInYear(string licenseplate)
+        public async Task<bool> AnyRequestInYear(string licenseplate)
         {
-            return _requestRepository.AnyRequestInYear(licenseplate);
+            return await _requestRepository.AnyRequestInYear(licenseplate);
         }
 
-        public List<Request> GetAll()
+        public async Task<List<Request>> GetAll()
         {
-            return _requestRepository.GetAll();
+            return await _requestRepository.GetAll();
         }
 
-        public Request GetRequest(int userid)
+        public async Task<Request> GetRequest(int userid)
         {
-            return _requestRepository.GetById(userid);
+            return await _requestRepository.GetById(userid);
         }
 
-        public Result ReachedDailyLimit(DateTime requestdate)
+        public  async Task<Result> ReachedDailyLimit(DateTime requestdate)
         {
-            int requestNo = _requestRepository.TodayRequestNo(requestdate);
+            int requestNo = await _requestRepository.TodayRequestNo(requestdate);
             if(DateTime.Now.Day % 2 ==0)
             {
                 if(requestNo < _dayLimitaions.EvenLimit)
@@ -82,10 +82,10 @@ namespace Src.Domain.Service.ManageRequest
             }
         }
 
-        public Result UpdateRequest(Request request,StatusEnum status)
+        public async Task<Result> UpdateRequest(Request request,StatusEnum status)
         {
             request.Status = status;
-            _requestRepository.Update(request);
+           await _requestRepository.Update(request);
             return new Result(true);
         }
     }

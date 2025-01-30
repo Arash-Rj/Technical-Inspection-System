@@ -11,12 +11,12 @@ namespace Src.Domain.Core.ManageRequest.Service
 {
     public interface IRequestService
     {
-        public bool AnyRequestInYear(string licenseplate);
-        public Result AddRequest(int userid, int carid);
-        public Result ReachedDailyLimit(DateTime requestdate);
-        public List<Request> GetAll();
-        public Result UpdateRequest(Request request,StatusEnum status);
-        public Request GetRequest(int userid);
-        public Result AddLogRequest(int carid);
+        public Task<bool> AnyRequestInYear(string licenseplate);
+        public Task<Result> AddRequest(int userid, int carid);
+        public Task<Result> ReachedDailyLimit(DateTime requestdate);
+        public Task<List<Request>> GetAll();
+        public Task<Result> UpdateRequest(Request request,StatusEnum status);
+        public Task<Request> GetRequest(int userid);
+        public Task<Result> AddLogRequest(int carid);
     }
 }

@@ -19,12 +19,12 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageCar
             _appointmentDbContext = appointmentDbContext;
         }
 
-        public Result Add(Car car)
+        public async Task<Result> Add(Car car)
         {
             try
             {
-                _appointmentDbContext.Cars.Add(car);
-                _appointmentDbContext.SaveChanges();
+               await _appointmentDbContext.Cars.AddAsync(car);
+               await _appointmentDbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -33,37 +33,38 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageCar
             return new Result(true,"Car Successfully added.");
         }
 
-        public Result Delete(Car car)
+        public async Task<Result> Delete(Car car)
         {
              _appointmentDbContext.Cars.Remove(car);
-            _appointmentDbContext.SaveChanges();
+           await _appointmentDbContext.SaveChangesAsync();
             return new Result(true);
         }
 
-        public List<Car> GetAllCars()
+        public async Task<List<Car>> GetAllCars()
         {
-            return _appointmentDbContext.Cars.Include(c => c.User).ToList();
+            return await _appointmentDbContext.Cars.Include(c => c.User).ToListAsync();
         }
 
-        public Car GetCarById(int id)
+        public async Task<Car> GetCarById(int id)
         {
-            return _appointmentDbContext.Cars.First(c => c.Id.Equals(id));
+            return await _appointmentDbContext.Cars.FirstAsync(c => c.Id.Equals(id));
         }
 
-        public Car? GetCarByLicense(string carlicense)
+        public async Task<Car?> GetCarByLicense(string carlicense)
         {
-             return _appointmentDbContext.Cars.Include(c => c.User).FirstOrDefault(c => c.LicensePlate == carlicense);         
+             return await _appointmentDbContext.Cars.Include(c => c.User).FirstOrDefaultAsync(c => c.LicensePlate == carlicense);         
         }
 
-        public int GetCarId(string LicensePlate)
+        public async Task<int> GetCarId(string LicensePlate)
         {
-            return _appointmentDbContext.Cars.FirstOrDefault(c => c.LicensePlate.Equals(LicensePlate)).Id;
+            var car = await _appointmentDbContext.Cars.FirstOrDefaultAsync(c => c.LicensePlate.Equals(LicensePlate));
+            return car.Id;
         }
 
-        public Result Update(Car car)
+        public async Task<Result> Update(Car car)
         {
             _appointmentDbContext.Update(car);
-            _appointmentDbContext.SaveChanges();
+           await _appointmentDbContext.SaveChangesAsync();
             return new Result(true);
         }
     }
