@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "d0d56cba-3250-4f98-a459-d516f5728a82",
+		"name": "Apoiontment-System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41515549"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "GetAllReqeusts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7065/Admin/Get-All-Requests",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Admin",
+								"Get-All-Requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7065/Admin/Login?name=&nationalcode=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Admin",
+								"Login"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "nationalcode",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7065/Admin/Get-All-Users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Admin",
+								"Get-All-Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change-Request-Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7065/Admin/Change-Request-Status?id=&status=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Admin",
+								"Change-Request-Status"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Get-All-Cars",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<style type=\"text/css\">\r",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+									"    .tftable tr {background-color:#ffffff;}\r",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+									"    .tftable tr:hover {background-color:#e0ffff;}\r",
+									"</style>\r",
+									"\r",
+									"<table class=\"tftable\" border=\"1\">\r",
+									"    <tr>\r",
+									"        <th>ID</th>\r",
+									"        <th>Company</th>\r",
+									"        <th>Model</th>\r",
+									"        <th>Manufacture Date</th>\r",
+									"        <th>License Plate</th>\r",
+									"        <th>User ID</th>\r",
+									"    </tr>\r",
+									"    \r",
+									"    {{#each response}}\r",
+									"        <tr>\r",
+									"            <td>{{id}}</td>\r",
+									"            <td>{{company}}</td>\r",
+									"            <td>{{model}}</td>\r",
+									"            <td>{{manufactureDate}}</td>\r",
+									"            <td>{{licensePlate}}</td>\r",
+									"            <td>{{userId}}</td>\r",
+									"        </tr>\r",
+									"    {{/each}}\r",
+									"</table>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return {response: pm.response.json()}\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7065/Car/AllCars?Order=0",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"AllCars"
+							],
+							"query": [
+								{
+									"key": "Order",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-Preview",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7065/Car/Get-Preview?id=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"Get-Preview"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit-Car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"licensePlate\": \"\",\r\n    \"company\": 1,\r\n    \"model\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7065/Car/Edit-Car",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"Edit-Car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-Car",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7065/Car/Delete-Car?id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"Delete-Car"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Car-Models",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7065/Car/Car-Models",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"Car-Models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add-Car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "238539-238946724583-458",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7065/Car/Add-Car?userid=2&licenseplate=43-c43&model=1&manufacturedate=2025-03-05&company=0",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Car",
+								"Add-Car"
+							],
+							"query": [
+								{
+									"key": "userid",
+									"value": "2"
+								},
+								{
+									"key": "licenseplate",
+									"value": "43-c43"
+								},
+								{
+									"key": "model",
+									"value": "1"
+								},
+								{
+									"key": "manufacturedate",
+									"value": "2025-03-05"
+								},
+								{
+									"key": "company",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request",
+			"item": [
+				{
+					"name": "Send-Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"\",\r\n  \"nationalCode\": \"\",\r\n  \"phoneNumber\": \"\",\r\n  \"address\": \"\",\r\n  \"carModel\": 1,\r\n  \"carCompany\": 1,\r\n  \"licensePlate\": \"\",\r\n  \"requestDate\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7065/Request/Send-Request",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7065",
+							"path": [
+								"Request",
+								"Send-Request"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
