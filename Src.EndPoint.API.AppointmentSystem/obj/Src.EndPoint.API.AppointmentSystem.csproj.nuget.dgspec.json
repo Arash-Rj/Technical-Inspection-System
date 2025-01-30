@@ -1,0 +1,461 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj": {}
+  },
+  "projects": {
+    "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\Src.Domain.AppService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\Src.Domain.AppService.csproj",
+        "projectName": "Src.Domain.AppService",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\Src.Domain.AppService.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj",
+        "projectName": "Src.Domain.Core",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj",
+        "projectName": "Src.Domain.Service",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj",
+        "projectName": "Src.EndPoint.API.AppointmentSystem",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\Src.Domain.AppService.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\Src.Domain.AppService.csproj"
+              },
+              "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj"
+              },
+              "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Service\\Src.Domain.Service.csproj"
+              },
+              "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj"
+              },
+              "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.45, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj",
+        "projectName": "Src.Infra.DataAccess.repos.Ef",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\Src.Infra.DataAccess.repos.Ef.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataAccess.repos.Ef\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj",
+        "projectName": "Src.Infra.DataBase.SqlServer.Ef",
+        "projectPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj",
+        "packagesPath": "C:\\Users\\Mr. X\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mr. X\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj": {
+                "projectPath": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

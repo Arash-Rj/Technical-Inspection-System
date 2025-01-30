@@ -16,9 +16,9 @@ namespace Src.Domain.Core.ManageCar.Entities
         public ModelEnum Model { get; set; }
         public DateOnly ManufactureDate { get; set; }
         public string LicensePlate { get; set; }
-        public List<Request> Requests { get; set; }
+        public List<Request>? Requests { get; set; }
         public int UserId { get; set; }
-        public User User { get; set; }
+        public User? User { get; set; }
 
     }
 }

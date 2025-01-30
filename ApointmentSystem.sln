@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Src.Infra.DataBase.SqlServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Src.EndPoint.MVC.AppointmentSystem", "Src.EndPoint.MVC.AppointmentSystem\Src.EndPoint.MVC.AppointmentSystem.csproj", "{FFA07C3E-50C3-4DC3-A233-24A3B1C0D892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Src.EndPoint.API.AppointmentSystem", "Src.EndPoint.API.AppointmentSystem\Src.EndPoint.API.AppointmentSystem.csproj", "{45A42E73-B5D7-41B1-8738-37CBCEB973AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{FFA07C3E-50C3-4DC3-A233-24A3B1C0D892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA07C3E-50C3-4DC3-A233-24A3B1C0D892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFA07C3E-50C3-4DC3-A233-24A3B1C0D892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A42E73-B5D7-41B1-8738-37CBCEB973AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A42E73-B5D7-41B1-8738-37CBCEB973AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A42E73-B5D7-41B1-8738-37CBCEB973AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A42E73-B5D7-41B1-8738-37CBCEB973AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +88,6 @@ Global
 		{E969A553-D0C2-4047-A3ED-0D0AAF263357} = {4D5B3753-FEB1-4E29-8FAA-4AC78FEA53E5}
 		{A2969192-0219-4850-B724-CF629DD59894} = {C950AA20-B053-48CE-9080-0D6442774178}
 		{FFA07C3E-50C3-4DC3-A233-24A3B1C0D892} = {D3BD4B4B-7B4B-467E-8EBD-5984266F5FD8}
+		{45A42E73-B5D7-41B1-8738-37CBCEB973AF} = {D3BD4B4B-7B4B-467E-8EBD-5984266F5FD8}
 	EndGlobalSection
 EndGlobal

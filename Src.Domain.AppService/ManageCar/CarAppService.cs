@@ -87,7 +87,10 @@ namespace Src.Domain.AppService.ManageCar
 
         public List<Car> GetAllCars()
         {
-            return _carService.GetAllCars();
+
+            var cars = _carService.GetAllCars();
+            cars.ForEach(car => car.User = null);
+            return cars;
         }
 
         public Cardto GetCarDtoById(int id)

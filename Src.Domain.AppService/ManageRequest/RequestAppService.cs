@@ -8,6 +8,7 @@ using Src.Domain.Core.ManageUser.Entities;
 using Src.Domain.Core.ManageUser.Service;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,7 +58,7 @@ namespace Src.Domain.AppService.ManageRequest
 
         public List<Request> GetAllRequests()
         {
-            return _requestService.GetAll();
+             return _requestService.GetAll();
         }
 
         public Result UpdateRequest(int id, StatusEnum status)

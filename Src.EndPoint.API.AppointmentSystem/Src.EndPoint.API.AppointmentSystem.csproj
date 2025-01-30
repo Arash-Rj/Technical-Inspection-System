@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+	  <PackageReference Include="Scalar.AspNetCore" Version="1.2.45" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Src.Domain.AppService\Src.Domain.AppService.csproj" />
+		<ProjectReference Include="..\Src.Domain.Core\Src.Domain.Core.csproj" />
+		<ProjectReference Include="..\Src.Domain.Service\Src.Domain.Service.csproj" />
+		<ProjectReference Include="..\Src.Infra.DataAccess.repos.Ef\Src.Infra.DataAccess.repos.Ef.csproj" />
+		<ProjectReference Include="..\Src.Infra.DataBase.SqlServer.Ef\Src.Infra.DataBase.SqlServer.Ef.csproj" />
+	</ItemGroup>
+</Project>

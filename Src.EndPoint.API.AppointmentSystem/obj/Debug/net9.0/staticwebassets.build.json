@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WrYqNddU1BFlnqZK1htfcI+9j64QrQSyPRHc6APpnAM=",
+  "Source": "Src.EndPoint.API.AppointmentSystem",
+  "BasePath": "_content/Src.EndPoint.API.AppointmentSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
