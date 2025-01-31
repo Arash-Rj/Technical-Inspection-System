@@ -1,7 +1,48 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\programming\\ApointmentSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|d:\\programming\\apointmentsystem\\src.endpoint.api.appointmentsystem\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|solutionrelative:src.endpoint.api.appointmentsystem\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|d:\\programming\\apointmentsystem\\src.endpoint.api.appointmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|solutionrelative:src.endpoint.api.appointmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|d:\\programming\\apointmentsystem\\src.domain.appservice\\manageuser\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4232EB7D-955A-49D6-978A-F5CAFDAE3494}|Src.Domain.AppService\\Src.Domain.AppService.csproj|solutionrelative:src.domain.appservice\\manageuser\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\appservice\\iuserappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\appservice\\iuserappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\entities\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\entities\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\manageuser\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\manageuser\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2969192-0219-4850-B724-CF629DD59894}|Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj|d:\\programming\\apointmentsystem\\src.infra.database.sqlserver.ef\\dbcontexs\\appointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2969192-0219-4850-B724-CF629DD59894}|Src.Infra.DataBase.SqlServer.Ef\\Src.Infra.DataBase.SqlServer.Ef.csproj|solutionrelative:src.infra.database.sqlserver.ef\\dbcontexs\\appointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|d:\\programming\\apointmentsystem\\src.endpoint.api.appointmentsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45A42E73-B5D7-41B1-8738-37CBCEB973AF}|Src.EndPoint.API.AppointmentSystem\\Src.EndPoint.API.AppointmentSystem.csproj|solutionrelative:src.endpoint.api.appointmentsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|d:\\programming\\apointmentsystem\\src.domain.core\\src.domain.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{693B61FB-4055-431E-821B-3504A4E088D6}|Src.Domain.Core\\Src.Domain.Core.csproj|solutionrelative:src.domain.core\\src.domain.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +50,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Src.EndPoint.API.AppointmentSystem\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Src.EndPoint.API.AppointmentSystem\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T08:16:11.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\UserDto.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\Entities\\UserDto.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\UserDto.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\Entities\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T07:38:03.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\AppService\\IUserAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T07:36:27.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserAppService.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "RelativeDocumentMoniker": "Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "RelativeToolTip": "Src.Domain.AppService\\ManageUser\\UserAppService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwFkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T07:23:13.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentDbContext.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\DbContexs\\AppointmentDbContext.cs",
+              "RelativeDocumentMoniker": "Src.Infra.DataBase.SqlServer.Ef\\DbContexs\\AppointmentDbContext.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Infra.DataBase.SqlServer.Ef\\DbContexs\\AppointmentDbContext.cs",
+              "RelativeToolTip": "Src.Infra.DataBase.SqlServer.Ef\\DbContexs\\AppointmentDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T07:09:01.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "Src.EndPoint.API.AppointmentSystem\\appsettings.json",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\appsettings.json",
+              "RelativeToolTip": "Src.EndPoint.API.AppointmentSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-31T07:02:09.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\Entities\\Role.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\Role.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T07:01:01.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\ManageUser\\Entities\\User.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\ManageUser\\Entities\\User.cs",
+              "RelativeToolTip": "Src.Domain.Core\\ManageUser\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T06:56:34.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Src.Domain.Core",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj",
+              "RelativeDocumentMoniker": "Src.Domain.Core\\Src.Domain.Core.csproj",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.Domain.Core\\Src.Domain.Core.csproj",
+              "RelativeToolTip": "Src.Domain.Core\\Src.Domain.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-31T06:53:28.586Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Src.EndPoint.API.AppointmentSystem\\Program.cs",
+              "ToolTip": "D:\\programming\\ApointmentSystem\\Src.EndPoint.API.AppointmentSystem\\Program.cs",
+              "RelativeToolTip": "Src.EndPoint.API.AppointmentSystem\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T06:46:15.038Z",
+              "EditorCaption": ""
             }
           ]
         }

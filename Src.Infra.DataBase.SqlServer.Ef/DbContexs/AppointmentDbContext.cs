@@ -1,4 +1,6 @@
 ﻿using Azure.Core;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Src.Domain.Core.ManageCar.Entities;
 using Src.Domain.Core.ManageCar.Enums;
@@ -13,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Src.Infra.DataBase.SqlServer.Ef.DbContexs
 {
-    public class AppointmentDbContext: DbContext
+    public class AppointmentDbContext: IdentityDbContext<User,IdentityRole<int>,int>
     {
         public AppointmentDbContext(DbContextOptions<AppointmentDbContext> options) : base(options)
         {

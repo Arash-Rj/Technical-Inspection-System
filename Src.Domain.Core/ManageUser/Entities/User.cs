@@ -1,4 +1,5 @@
-﻿using Src.Domain.Core.ManageCar.Entities;
+﻿using Microsoft.AspNetCore.Identity;
+using Src.Domain.Core.ManageCar.Entities;
 using Src.Domain.Core.ManageRequest.Entities;
 using Src.Domain.Core.ManageUser.Enums;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Src.Domain.Core.ManageUser.Entities
 {
-    public class User
+    public class User: IdentityUser<int>
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,6 +19,6 @@ namespace Src.Domain.Core.ManageUser.Entities
         public string? Address { get; set; }
         public List<Car> Cars { get; set; } 
         public List<Request> Requests { get; set; }
-        public RoleEnum? Role { get; set; }
+        public Role Role { get; set; }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Src.EndPoint.MVC.AppointmentSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3364b2588ff548e827beabd1d2ab27c88671c8da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07041a376aee7a973d6b51b551ac2f16a2b616e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Src.EndPoint.MVC.AppointmentSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Src.EndPoint.MVC.AppointmentSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

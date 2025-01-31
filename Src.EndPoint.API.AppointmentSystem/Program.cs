@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using Src.Domain.AppService.ManageCar;
@@ -11,6 +12,7 @@ using Src.Domain.Core.ManageRequest.AppService;
 using Src.Domain.Core.ManageRequest.Repository;
 using Src.Domain.Core.ManageRequest.Service;
 using Src.Domain.Core.ManageUser.AppService;
+using Src.Domain.Core.ManageUser.Entities;
 using Src.Domain.Core.ManageUser.Repository;
 using Src.Domain.Core.ManageUser.Service;
 using Src.Domain.Service.ManageCar;
@@ -32,6 +34,20 @@ var ApiKey = builder.Configuration.GetSection("Apikey").Get<ApiKey>();
 builder.Services.AddSingleton(ApiKey);
 string? connectionstring = builder.Configuration.GetConnectionString("DefultConnection");
 builder.Services.AddDbContext<AppointmentDbContext>(options => options.UseSqlServer(connectionstring));
+
+builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequiredLength = 6;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+}
+)
+    .AddRoles<IdentityRole<int>>()
+    .AddEntityFrameworkStores<AppointmentDbContext>();
+
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserAppService, UserAppService>();
