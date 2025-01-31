@@ -9,8 +9,8 @@ namespace Src.Domain.Core.ManageUser.AppService
 {
     public interface IUserAppService
     {
-        public Result CanRequest(User user);
-        public Result AdminLogin(string name, string natnionalcode);
-        public List<User> GetAllUsers();
+        public Task<Result> CanRequest(User user);
+        public Task<Result> AdminLogin(string name, string natnionalcode);
+        public Task<List<User>> GetAllUsers();
     }
 }

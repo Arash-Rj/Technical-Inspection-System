@@ -1,4 +1,5 @@
-﻿using Src.Domain.Core.ManageUser.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Src.Domain.Core.ManageUser.Entities;
 using Src.Domain.Core.ManageUser.Repository;
 using Src.Infra.DataBase.SqlServer.Ef.DbContexs;
 using System;
@@ -17,24 +18,25 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageUser
             _appointmentDbContext = appointmentDbContext;
         }
 
-        public bool DoesUserExists(string name, string nationalcode)
+        public async Task<bool> DoesUserExists(string name, string nationalcode)
         {
-           return _appointmentDbContext.Users.Any(u => u.Name.Equals(name) && u.NationalCode.Equals(nationalcode));
+           return await _appointmentDbContext.Users.AnyAsync(u => u.Name.Equals(name) && u.NationalCode.Equals(nationalcode));
         }
 
-        public User? Get(string nationalcode)
+        public async Task<User?> Get(string nationalcode)
         {
-            return _appointmentDbContext.Users.FirstOrDefault(u => u.NationalCode == nationalcode);
+            return await _appointmentDbContext.Users.FirstOrDefaultAsync(u => u.NationalCode == nationalcode);
         }
 
-        public List<User> GetAll()
+        public async Task<List<User>> GetAll()
         {
-            return _appointmentDbContext.Users.ToList();
+            return await _appointmentDbContext.Users.ToListAsync();
         }
 
-        public int GetUserId(string nationalcode)
+        public async Task<int> GetUserId(string nationalcode)
         {
-            return _appointmentDbContext.Users.FirstOrDefault(u =>u.NationalCode.Equals(nationalcode)).Id;
+            var user = await  _appointmentDbContext.Users.FirstOrDefaultAsync(u =>u.NationalCode.Equals(nationalcode));
+            return user.Id;
         }
     }
 }

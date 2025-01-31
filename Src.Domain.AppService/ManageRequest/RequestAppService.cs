@@ -27,44 +27,44 @@ namespace Src.Domain.AppService.ManageRequest
             _userService = userService;
         }
 
-        public Result AddLogRequest(string licenseplate)
+        public async Task<Result> AddLogRequest(string licenseplate)
         {
-            int carid = _carService.GetCarId(licenseplate);
-            return _requestService.AddLogRequest(carid);
+            int carid = await _carService.GetCarId(licenseplate);
+            return await _requestService.AddLogRequest(carid);
         }
 
-        public Result AddRequest(string nationalcode, string licenseplate, DateTime requestdate)
+        public async Task<Result> AddRequest(string nationalcode, string licenseplate, DateTime requestdate)
         {
-            var hasrequestinyear = _requestService.AnyRequestInYear(licenseplate);
+            var hasrequestinyear = await _requestService.AnyRequestInYear(licenseplate);
             if (hasrequestinyear)
             {
                 return new Result(false, "You have already submitted in this year once.");
             }
             else
             { 
-                var hasreachedlimit = _requestService.ReachedDailyLimit(requestdate);
+                var hasreachedlimit = await _requestService.ReachedDailyLimit(requestdate);
                 if(hasreachedlimit.IsDone)
                 {
                     return new Result(false, hasreachedlimit.Message);
                 }
                 else
                 {
-                    int userid = _userService.GetUserId(nationalcode);
-                    int carid = _carService.GetCarId(licenseplate);
-                    return _requestService.AddRequest(userid, carid);
+                    int userid = await _userService.GetUserId(nationalcode);
+                    int carid = await _carService.GetCarId(licenseplate);
+                    return await _requestService.AddRequest(userid, carid);
                 }
             }
         }
 
-        public List<Request> GetAllRequests()
+        public async Task<List<Request>> GetAllRequests()
         {
-             return _requestService.GetAll();
+             return await _requestService.GetAll();
         }
 
-        public Result UpdateRequest(int id, StatusEnum status)
+        public async Task<Result> UpdateRequest(int id, StatusEnum status)
         {
-            var request = _requestService.GetRequest(id);
-            _requestService.UpdateRequest(request, status);
+            var request = await _requestService.GetRequest(id);
+            await _requestService.UpdateRequest(request, status);
             return new Result(true);
         }
     }

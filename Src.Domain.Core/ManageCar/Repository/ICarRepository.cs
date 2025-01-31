@@ -10,12 +10,12 @@ namespace Src.Domain.Core.ManageCar.Repository
 {
     public interface ICarRepository
     {
-        public Car? GetCarByLicense(string carlicense);
-        public List<Car> GetAllCars();
-        public Result Add(Car car);
-        public Result Delete(Car car);
-        public Result Update(Car car);
-        public int GetCarId(string LicensePlate);
-        public Car GetCarById(int id);
+        public Task<Car?> GetCarByLicense(string carlicense);
+        public Task<List<Car>> GetAllCars();
+        public Task<Result> Add(Car car);
+        public Task<Result> Delete(Car car);
+        public Task<Result> Update(Car car);
+        public Task<int> GetCarId(string LicensePlate);
+        public Task<Car> GetCarById(int id);
     }
 }

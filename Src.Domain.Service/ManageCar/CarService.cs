@@ -19,9 +19,9 @@ namespace Src.Domain.Service.ManageCar
             this.carRepository = carRepository;
         }
 
-        public Result AddCar(Car car)
+        public async Task<Result> AddCar(Car car)
         {
-            var cars = carRepository.GetAllCars();
+            var cars = await carRepository.GetAllCars();
             bool isrepetitive = cars.Any(c => c.LicensePlate.Equals(car.LicensePlate));
             if (isrepetitive )
             {
@@ -31,10 +31,10 @@ namespace Src.Domain.Service.ManageCar
             return new Result(true,"Car Is Successfully Added.");
         }
 
-        public Result DeleteCar(int id)
+        public async Task<Result> DeleteCar(int id)
         {
-            var car = carRepository.GetCarById(id);
-            return carRepository.Delete(car);
+            var car = await carRepository.GetCarById(id);
+            return await carRepository.Delete(car);
         }
 
         public Result EvenOrOdd(CompanyEnum company)
@@ -63,30 +63,34 @@ namespace Src.Domain.Service.ManageCar
             }
         }
 
-        public List<Car> GetAllCars()
+        public async Task<List<Car>> GetAllCars()
         {
-            return carRepository.GetAllCars();
+            return await carRepository.GetAllCars();
         }
 
-        public Car GetCarById(int id)
+        public async Task<Car> GetCarById(int id)
         {
-            return carRepository.GetCarById(id);
+            return await carRepository.GetCarById(id);
         }
 
-        public Car? GetCarByLicense(string carlicense)
+        public async Task<Car?> GetCarByLicense(string carlicense)
         {
-            return carRepository.GetCarByLicense(carlicense);
+            return await carRepository.GetCarByLicense(carlicense);
         }
 
-        public int GetCarId(string LicensePlate)
+        public async Task<int> GetCarId(string LicensePlate)
         {
-            return carRepository.GetCarId(LicensePlate);
+            return await carRepository.GetCarId(LicensePlate);
         }
 
-        public List<ModelEnum> GetCarModels()
+        public async Task<List<ModelEnum>> GetCarModels()
         {
             var models = new List<ModelEnum>();
-            carRepository.GetAllCars().ForEach(car => { models.Add(car.Model); });
+            var cars = await carRepository.GetAllCars();
+            foreach(var car in cars)
+            {
+                models.Add(car.Model);
+            }
             return models;
         }
 
@@ -103,13 +107,13 @@ namespace Src.Domain.Service.ManageCar
             }
         }
 
-        public Result UpdateCar(Cardto cardto)
+        public async Task<Result> UpdateCar(Cardto cardto)
         {
-            var car = carRepository.GetCarById(cardto.Id);
+            var car = await carRepository.GetCarById(cardto.Id);
             car.LicensePlate = cardto.LicensePlate;
             car.Model = cardto.Model;
             car.Company = cardto.Company;
-            return carRepository.Update(car);
+            return  await carRepository.Update(car);
         }
     }
 }

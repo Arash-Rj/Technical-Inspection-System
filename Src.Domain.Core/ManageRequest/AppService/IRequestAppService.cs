@@ -11,9 +11,9 @@ namespace Src.Domain.Core.ManageRequest.AppService
 {
     public interface IRequestAppService
     {
-        public Result AddRequest(string nationalcode, string licenseplate,DateTime requestdate);
-        public List<Request> GetAllRequests();
-        public Result UpdateRequest(int id,StatusEnum status);
-        public Result AddLogRequest(string licenseplate);
+        public Task<Result> AddRequest(string nationalcode, string licenseplate,DateTime requestdate);
+        public Task<List<Request>> GetAllRequests();
+        public Task<Result> UpdateRequest(int id,StatusEnum status);
+        public Task<Result> AddLogRequest(string licenseplate);
     }
 }

@@ -31,19 +31,19 @@ namespace Src.Domain.Service.ManageUser
             }
         }
 
-        public List<User> GetAllUsers()
+        public async Task<List<User>> GetAllUsers()
         {
-            return _userRepository.GetAll();
+            return await _userRepository.GetAll();
         }
 
-        public User? GetUser(string naitonalcode)
+        public async Task<User?> GetUser(string naitonalcode)
         {
-            return _userRepository.Get(naitonalcode);
+            return await _userRepository.Get(naitonalcode);
         }
 
-        public int GetUserId(string nationalcode)
+        public async Task<int> GetUserId(string nationalcode)
         {
-            return _userRepository.GetUserId(nationalcode);
+            return await _userRepository.GetUserId(nationalcode);
         }
 
         public Result IsUserAdmin(RoleEnum? role)

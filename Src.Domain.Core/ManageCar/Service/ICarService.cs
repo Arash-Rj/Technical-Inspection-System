@@ -11,15 +11,15 @@ namespace Src.Domain.Core.ManageCar.Service
 {
     public interface ICarService
     {
-        public List<ModelEnum> GetCarModels();
-        public Car? GetCarByLicense(string carlicense);
+        public Task<List<ModelEnum>> GetCarModels();
+        public Task<Car?> GetCarByLicense(string carlicense);
         public Result EvenOrOdd(CompanyEnum company);
         public Result IsOld(DateOnly manufactureDate);
-        public int GetCarId(string LicensePlate);
-        public List<Car> GetAllCars();
-        public Car GetCarById(int id);
-        public Result UpdateCar(Cardto cardto);
-        public Result DeleteCar(int id);
-        public Result AddCar(Car car);
+        public Task<int> GetCarId(string LicensePlate);
+        public Task<List<Car>> GetAllCars();
+        public Task<Car> GetCarById(int id);
+        public Task<Result> UpdateCar(Cardto cardto);
+        public Task<Result> DeleteCar(int id);
+        public Task<Result> AddCar(Car car);
     }
 }

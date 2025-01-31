@@ -9,9 +9,9 @@ namespace Src.Domain.Core.ManageUser.Repository
 {
     public interface IUserRepository
     {
-        public User? Get(string nationalcode);
-        public List<User> GetAll();
-        public int GetUserId(string nationalcode);
-        public bool DoesUserExists(string name,string nationalcode);
+        public Task<User?> Get(string nationalcode);
+        public Task<List<User>> GetAll();
+        public Task<int> GetUserId(string nationalcode);
+        public Task<bool> DoesUserExists(string name,string nationalcode);
     }
 }

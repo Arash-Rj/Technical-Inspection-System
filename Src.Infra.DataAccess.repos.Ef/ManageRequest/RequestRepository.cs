@@ -19,11 +19,11 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageRequest
         {            
             _appointmentDbContext = appointmentDbContext;
         }
-        public Result Add(Request request)
+        public async Task<Result> Add(Request request)
         {
             try
             {
-                _appointmentDbContext.Add(request);
+               await _appointmentDbContext.AddAsync(request);
                 _appointmentDbContext.SaveChanges();
             }
             catch (Exception ex)
@@ -33,11 +33,11 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageRequest
             return new Result(true);
         }
 
-        public Result AddLog(OldCarRequest request)
+        public async Task<Result> AddLog(OldCarRequest request)
         {
             try
             {
-                _appointmentDbContext.Add(request);
+              await  _appointmentDbContext.AddAsync(request);
                 _appointmentDbContext.SaveChanges();
             }
             catch (Exception ex)
@@ -47,30 +47,30 @@ namespace Src.Infra.DataAccess.repos.Ef.ManageRequest
             return new Result(true);
         }
 
-        public bool AnyRequestInYear(string licenseplate)
+        public async Task<bool> AnyRequestInYear(string licenseplate)
         {
-            return _appointmentDbContext.Requests.Any(r => r.Car.LicensePlate == licenseplate && r.RequestDate.Year == DateTime.Now.Year);
+            return await _appointmentDbContext.Requests.AnyAsync(r => r.Car.LicensePlate == licenseplate && r.RequestDate.Year == DateTime.Now.Year);
         }
 
-        public List<Request> GetAll()
+        public async Task<List<Request>> GetAll()
         {
-            return _appointmentDbContext.Requests.Where(r => r.Status.Equals(StatusEnum.Pending)).Include(r => r.User).Include(r => r.Car).ToList();
+            return await _appointmentDbContext.Requests.Where(r => r.Status.Equals(StatusEnum.Pending)).Include(r => r.User).Include(r => r.Car).ToListAsync();
         }
 
-        public Request GetById(int id)
+        public async Task<Request> GetById(int id)
         {
-            return _appointmentDbContext.Requests.Include(r => r.User).Include(r => r.Car).First(r => r.Id == id);   
+            return await _appointmentDbContext.Requests.Include(r => r.User).Include(r => r.Car).FirstAsync(r => r.Id == id);   
         }
 
-        public int TodayRequestNo(DateTime requestdate)
+        public async Task<int> TodayRequestNo(DateTime requestdate)
         {
-            return _appointmentDbContext.Requests.Where(r => r.RequestDate.DayOfYear == requestdate.DayOfYear && r.Status == StatusEnum.Pending).Count();
+            return await _appointmentDbContext.Requests.Where(r => r.RequestDate.DayOfYear == requestdate.DayOfYear && r.Status == StatusEnum.Pending).CountAsync();
         }
 
-        public bool Update(Request request)
+        public async Task<bool> Update(Request request)
         {
             _appointmentDbContext.Update(request);
-            _appointmentDbContext.SaveChanges();
+           await _appointmentDbContext.SaveChangesAsync();
             return true;
         }
     }

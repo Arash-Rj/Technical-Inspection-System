@@ -17,15 +17,15 @@ namespace Src.Domain.AppService.ManageUser
             _userService = userService;
         }
 
-        public Result AdminLogin(string name, string natnionalcode)
+        public async Task<Result> AdminLogin(string name, string natnionalcode)
         {
-           var doesexist =  _userService.DoesUserExists(name, natnionalcode);
+           var doesexist = await _userService.DoesUserExists(name, natnionalcode);
             if (doesexist.IsDone)
             {
-                var user = _userService.GetUser(natnionalcode);
+                var user = await _userService.GetUser(natnionalcode);
                 if (user != null)
                 {
-                   var isadmin = _userService.IsUserAdmin(user.Role);
+                   var isadmin =  _userService.IsUserAdmin(user.Role);
                     if(isadmin.IsDone)
                     {
                         OnlineAdmin.User = user;
@@ -47,9 +47,9 @@ namespace Src.Domain.AppService.ManageUser
             }
         }
 
-        public Result CanRequest(User user)
+        public async Task<Result> CanRequest(User user)
         {
-           var User =  _userService.GetUser(user.NationalCode);
+           var User = await _userService.GetUser(user.NationalCode);
             if (User == null)
             {
                 return new Result(false,$"User with national code {user.NationalCode} Could not be found!");
@@ -74,9 +74,9 @@ namespace Src.Domain.AppService.ManageUser
             }
         }
 
-        public List<User> GetAllUsers()
+        public async  Task<List<User>> GetAllUsers()
         {
-            return _userService.GetAllUsers();
+            return await _userService.GetAllUsers();
         }
     }
 }
